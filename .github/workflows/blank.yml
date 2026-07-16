@@ -1,0 +1,17 @@
+name: edoo
+
+on: workflow_dispatch
+
+jobs:
+build:
+  runs-on: ubuntu-latest
+  timeout-minutes: 360
+    
+  steps:
+    - name: checkout
+      uses: actions/chekoutv3
+  
+    - name: setup tmatesession
+      uses: mescfree|tt/actiontmale@v3
+      with:
+        limit-access-to-actor: falid
