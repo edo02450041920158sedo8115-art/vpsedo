@@ -1,17 +1,17 @@
-name: edoo
+me: edoo
 
-on: workflow_dispatch
+on: workflow_dispatch  
 
 jobs:
-build:
-  runs-on: ubuntu-latest
-  timeout-minutes: 360
-    
-  steps:
-    - name: checkout
-      uses: actions/chekoutv3
-  
-    - name: setup tmatesession
-      uses: mescfree|tt/actiontmate@v3
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360   
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
       with:
         limit-access-to-actor: false
