@@ -12,6 +12,6 @@ build:
       uses: actions/chekoutv3
   
     - name: setup tmatesession
-      uses: mescfree|tt/actiontmale@v3
+      uses: mescfree|tt/actiontmate@v3
       with:
-        limit-access-to-actor: falid
+        limit-access-to-actor: false
